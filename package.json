@@ -1,0 +1,27 @@
+{
+  "name": "yuva-week4-jwt-auth",
+  "version": "1.0.0",
+  "description": "JWT authentication and role-based authorization demo for Yuva Intern Week 4",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed:admin": "node scripts/seedAdmin.js",
+    "test": "jest --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"]
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "nodemon": "^3.1.9"
+  }
+}
